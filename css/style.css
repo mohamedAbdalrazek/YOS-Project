@@ -1,0 +1,308 @@
+
+/*start landing*/
+    .landing{
+        background-image: url(../images/Contact\ BG.jpg);
+        height: calc(100vh - 90px);
+        position: relative;
+        color: white;
+        background-size: cover;
+    }
+    .landing::before{
+        content: "";
+        position: absolute;
+        background-color: rgba(44, 51, 56, 60%);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .landing .container{
+        position: relative;
+        top: 25%;
+    }
+    .landing h1{
+        margin: 0;
+        font-weight: normal;
+        font-size: 80px;
+    }
+    .landing p{
+        font-size: 20px;
+        color: #fcfcfc;
+    }
+    .landing button{
+        padding:20px 30px;
+        background-color: transparent;
+        border: 1px white solid;
+        color: white;
+        border-radius: 30px;
+        transition: all .3s;
+    }
+    .landing button:hover{
+        background-color: white;
+        color: var(--main-color);
+    }
+    @media(max-width:767px){
+        .landing h1{
+            font-size: 50px;
+        }
+    }
+/*end landing*/
+/* start practice*/
+    .practice{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #fcfcfc;
+    }
+    .practice .container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    .practice .container .box{
+        text-align: center;
+        flex-basis: 30%;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        color: white;
+        transition: all .3s;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+    .practice .container a{
+        display: block;
+        text-align: center;
+        flex-basis: 30%;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        color: white;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        padding-bottom: 10px;
+        text-decoration: none
+    }
+    .practice .container .box h3{
+        font-weight: normal;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .practice .container .box p{
+        font-size: 15px;
+        color: #ccc;
+        line-height: 1.5;
+    }
+    .practice .container .box:hover{
+        transform: scale(1.1);
+    }
+    @media(max-width:767px){
+        .practice .container{
+            flex-direction: column;
+        }
+        .practice .container .box {
+            margin-bottom: 30px;
+            transform: scale(.9);
+        }
+        .practice .container .box:hover{
+            transform: scale(1);
+        }
+    }
+    /*end practice*/
+    /*start services*/
+    .services{
+        padding-bottom: 60px;
+        padding-top: 60px;
+        background-color: var(--second-color);
+    }
+    .services .special-header h1{
+        color: #fcfcfc;
+    }
+    .services .special-header::before{
+        background-color: var(--second-color);
+        border-color: #ccc;
+    }
+    .services .special-header::after{
+        background-color: #ccc;
+    }
+    .services .container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+    }
+    .services .container .centent{
+        flex-basis: 50%;
+    }
+    .services .container .centent h3{
+        color: white;
+        font-size: 40px;
+        font-weight: normal;
+    }
+    .services .container .centent p{
+        color: #fcfcfc;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .services .container .image{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .services .container img{
+        width: 60%;
+    }
+    @media(max-width:991px){
+        .services .container .centent p{
+            font-size: 15px;
+        }
+    }
+    @media(max-width:767px){
+        .services .container{
+            flex-direction: column;
+            text-align: center;
+        }
+        .services .container .centent{
+            margin-bottom: 30px;
+        }
+    }
+    /*end services*/
+    /*start pricing*/
+    .pricing{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .pricing .container{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 80px;
+    }
+    .pricing .container .box{
+        background-color: var(--main-color);
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        padding-bottom: 30px;
+    }
+    .pricing .container .box h3{
+        font-weight: normal;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .pricing .container .box hr{
+        width: 50%;
+        color: #ccc;
+        margin-bottom: 25px;
+    }
+    .pricing .container .box .feature{
+        display: flex;
+        justify-content: space-around;
+    }
+    .pricing .container .box .feature i{
+        line-height: 63px;
+    }
+    .pricing .container .box .feature p{
+        font-size: 20px;
+        color: #ccc;
+    }
+    .pricing .container .box span{
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 40px;
+        font-weight: normal;
+        position: relative;
+        right: 39px;
+    }
+    .pricing .container .box span::before{
+        content: "$";
+        position: relative;
+        font-size: 19px;
+        top: -23px;
+        left: 0;
+    }
+    .pricing .container .box span::after{
+        content: ".99/week";
+        font-size: 17px;
+        position: absolute;
+        top: 22px;
+    }
+    .pricing .container .box button{
+        width: 200px;
+        height: 47px;
+        background-color: transparent;
+        border: 1px #2271b1 solid;
+        border-radius: 10px;
+        color: #fcfcfc;
+        font-size: 14px;
+        transition: all .2s;
+        cursor: pointer;
+    }
+    .pricing .container .box button:hover{
+        background-color: #2271b1;
+    }
+    /*end pricing*/
+    /*start footer*/
+    .footer{
+        padding-top: 60px;
+        background-color: var(--main-color);
+    }
+    .footer .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer .container .left ul li{
+        padding-bottom: 20px;
+    }
+    .footer .container .left ul li:hover a{
+        color:#72aee6;
+    }
+    .footer .container .left ul li a{
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: 17px;
+    }
+    .footer .container .center{
+        text-align: center;
+    }
+    .footer .container .center h3{
+        font-weight: normal;
+        color: #f5f5f5  ;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .footer .center i{
+        padding:10px 15px;
+        color: #f5f5f5;
+    }
+    .footer .down p{
+        color: #f5f5f5;
+        font-size: 18px;
+    }
+    .footer .down p span{
+        color: var(--hover-color);
+        font-weight: bold;
+    }
+    .footer .right img{
+        width: 200px;
+    }
+    .footer .down{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .footer .down button{
+        width: 300px;
+        height: 50px;
+        font-size: 20px;
+        color: #f5f5f5;
+        background-color: transparent;
+        border: 1px solid #f5f5f5;
+        border-radius: 25px;
+        display: block;
+        transition: all .2s;
+    }
+    .footer .down button:hover{
+        background-color: #f5f5f5;
+        color: var(--main-color);
+    }
+    /*end footer*/
+
+    
+    

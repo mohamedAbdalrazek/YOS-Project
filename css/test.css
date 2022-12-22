@@ -1,0 +1,14 @@
+/*start header*/
+.header .container ul li:last-child{
+    position: relative;
+}
+.header .container ul li:nth-child(2)::before{
+    content: "";
+    width: 1px;
+    height: 25px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+/*end header*/
